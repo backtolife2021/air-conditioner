@@ -184,7 +184,7 @@ export const RemoteControl: React.FC = () => {
         </RCButton>
       </div>
 
-      {/* 升高温度按钮 */}
+
       <RCButton
         aria-label="add"
         className={classes.margin}
@@ -198,7 +198,7 @@ export const RemoteControl: React.FC = () => {
         <ExpandLessIcon />
       </RCButton>
 
-      {/* 降低温度按钮 */}
+
       <RCButton
         aria-label="reduce"
         className={classes.margin}
