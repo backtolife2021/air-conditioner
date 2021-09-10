@@ -189,8 +189,8 @@ export const RemoteControl: React.FC = () => {
         aria-label="add"
         className={classes.margin}
         onClick={() => {
-          if(!ac.status){
-            toggleAC(ac.status, dispatch);
+          if (!ac.status) {
+            toggleAC(ac.status, dispatch)
           }
           dispatch(increaseTemperature());
         }}
@@ -203,8 +203,8 @@ export const RemoteControl: React.FC = () => {
         aria-label="reduce"
         className={classes.margin}
         onClick={() => {
-          if(!ac.status){
-            toggleAC(ac.status, dispatch);
+          if (!ac.status) {
+            toggleAC(ac.status, dispatch)
           }
           dispatch(decreaseTemperature());
         }}
