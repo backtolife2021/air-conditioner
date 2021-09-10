@@ -183,19 +183,29 @@ export const RemoteControl: React.FC = () => {
           <WbSunnyIcon />
         </RCButton>
       </div>
+
+
       <RCButton
         aria-label="add"
         className={classes.margin}
         onClick={() => {
+          if (!ac.status) {
+            toggleAC(ac.status, dispatch)
+          }
           dispatch(increaseTemperature());
         }}
       >
         <ExpandLessIcon />
       </RCButton>
+
+
       <RCButton
         aria-label="reduce"
         className={classes.margin}
         onClick={() => {
+          if (!ac.status) {
+            toggleAC(ac.status, dispatch)
+          }
           dispatch(decreaseTemperature());
         }}
       >
